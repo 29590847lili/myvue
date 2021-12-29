@@ -22,8 +22,11 @@ export default{
         logout(){
             exit().then((res)=>{
                 if(res.status === 'success'){
+                    localStorage.setItem("userRole", 'unload')
+                    // 跳转到登录页的时候顺便刷新
+                    window.location.href = window.location.origin + window.location.pathname
                     localStorage.removeItem("_token")
-                    this.$router.push({path: "/login"})
+                    //this.$router.push({path: "/login"})
                 }
             })
         }

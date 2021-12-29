@@ -30,9 +30,14 @@ export default {
                 if(res.status === "success"){
                     this.$store.getters["main/getLoginTime"]
                     this.$store.dispatch("main/updateUser",res.data);
+                    let getUserRole = 'admin' //'user'
+                    localStorage.setItem('userRole', getUserRole)
                     localStorage.setItem('_token',res.data._token)
+                    // this.$router.push({
+                    //     name: 'Main',
+                    // })
                     this.$router.push({
-                        name: 'Main',
+                        path: '/main'
                     })
                 }
             })   

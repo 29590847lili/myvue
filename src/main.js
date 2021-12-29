@@ -35,6 +35,8 @@ function InitLanguage() {
    }
  });
 
+// 控制路由表的js文件
+import '@/permission.js'
 
 new Vue({
   render: h => h(App),
@@ -44,11 +46,11 @@ new Vue({
 }).$mount('#app')
 
 // 全局前置路由守卫
-router.beforeEach( (to,from,next) =>{
-  const _token = localStorage.getItem('_token');//查看本地存储上是否有name对象
-  if( _token || to.path === '/login'){//短路逻辑，有就可以继续执行，没有就跳转到登录页面
-     return next()
-  }else{
-    next({ name: 'Login' })//跳转登录页面
-  }
-})
+// router.beforeEach( (to,from,next) =>{
+//   const _token = localStorage.getItem('_token');//查看本地存储上是否有name对象
+//   if( _token || to.path === '/login'){//短路逻辑，有就可以继续执行，没有就跳转到登录页面
+//      return next()
+//   }else{
+//     next({ name: 'Login' })//跳转登录页面
+//   }
+// })

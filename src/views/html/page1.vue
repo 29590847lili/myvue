@@ -18,7 +18,7 @@ export default {
         this.name = sessionStorage.getItem("name")
     },
     methods:{
-        handleNewPage(page){
+        handleNewPage(page){ // 可以打开新窗口
             let routeUrl = this.$router.resolve({
             path: "/views/"+page,
             query: {id:96}});
@@ -27,3 +27,6 @@ export default {
     }
 }
 </script>
+<style lang="less" scoped>
+
+</style>
