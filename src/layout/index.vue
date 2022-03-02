@@ -52,34 +52,31 @@ export default {
 
 <style lang='less' scoped>
 .main{
-  height: 100vh;
-  width: 100vw;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   .header{
     background:#b3c0d1;
     height:60px;
   }
   .main-content{
     display: flex;
-    height: calc(100vh - 120px);
+    flex:1;
   }
   .main-aside{
     background: rgb(48, 65, 86);
     width: 220px;
-    width: 220px;
     flex-shrink: 0;
-    -webkit-transition: width .2s linear;
-    transition: width .2s linear;
-    position: relative;
+    // -webkit-transition: width .2s linear;
+    // transition: width .2s linear;
+    // position: relative;
   }
   .main-right{
     // background: #349167;
-    flex-grow: 1;
-    flex-shrink: 0;
     width: calc(100vw - 220px);
-    height: 100%;
-    -webkit-transition: width .2s linear;
-    transition: width .2s linear;
-    position: relative;
+    // -webkit-transition: width .2s linear;
+    // transition: width .2s linear;
+    // position: relative;
   }
   .footer{
     background:#b3c0d1;

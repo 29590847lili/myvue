@@ -13,6 +13,8 @@ const HeightFollowWidth = () => import('@/views/css/HeightFollowWidth')
 const BFC = () => import('@/views/css/BFC')
 const PointerEvents = () => import('@/views/css/PointerEvents')
 const NewAndError = () => import('@/views/js/NewAndError')
+const Center = () => import('@/views/css/Center')
+const Block = () => import('@/views/css/Block')
 // 登录页
 const Login = () => import('@/components/login')
 const NotFount = () => import('@/layout/404')
@@ -100,7 +102,28 @@ export const permissionRouter = [
           icon: "el-icon-upload",
           roles: ['user', 'admin']
         }
-      }
+      },
+      {
+        path:'center',
+        name:'Center',
+        component: Center,
+        meta: {
+          title: "Center",
+          icon: "el-icon-upload",
+          roles: ['user', 'admin']
+        }
+      },
+      {
+        path:'block',
+        name:'Block',
+        component: Block,
+        meta: {
+          title: "Block",
+          icon: "el-icon-upload",
+          roles: ['user', 'admin']
+        }
+      },
+      
       // {
       //   path: '/*',
       //   name: 'NotFount',

@@ -2,7 +2,7 @@
     <div class="header">
         {{ this.$t("localization.header") }}
         <ShowUser/>
-        <button @click="logout()">{{ this.$t("localization.exit") }}</button>
+        <el-button class="button" @click="logout()">{{ this.$t("localization.exit") }}</el-button>
         <Multilingual/>
     </div>
         <!-- <article><img alt="Vue logo" src="../assets/logo.png"></article> -->
@@ -36,7 +36,17 @@ export default{
 </script>
 
 <style lang="less" scoped>
-.header{
+// .header{
+//   /deep/ .el-button span{
+//     background:red;
+//   }
+// }
+</style>
 
+<style>
+.header .el-button span{
+  
+    background:red;
+  
 }
 </style>
