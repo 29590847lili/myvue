@@ -51,7 +51,7 @@ export const permissionRouter = [
       icon: 'el-icon-info',
       roles: ['admin', 'user']
     },
-    children:[
+    children: [
       {
         path: 'threecolumnlayout',
         name: 'ThreeColumnLayout',
@@ -62,7 +62,7 @@ export const permissionRouter = [
           icon: "el-icon-upload",
           roles: ['user', 'admin']
         }
-      },    
+      },
       {
         path: 'twocolumnlayout',
         name: 'TwoColumnLayout',
@@ -94,8 +94,8 @@ export const permissionRouter = [
         }
       },
       {
-        path:'pointerevents',
-        name:'PointerEvents',
+        path: 'pointerevents',
+        name: 'PointerEvents',
         component: PointerEvents,
         meta: {
           title: "PointerEvents",
@@ -104,8 +104,8 @@ export const permissionRouter = [
         }
       },
       {
-        path:'center',
-        name:'Center',
+        path: 'center',
+        name: 'Center',
         component: Center,
         meta: {
           title: "Center",
@@ -114,8 +114,8 @@ export const permissionRouter = [
         }
       },
       {
-        path:'block',
-        name:'Block',
+        path: 'block',
+        name: 'Block',
         component: Block,
         meta: {
           title: "Block",
@@ -123,7 +123,7 @@ export const permissionRouter = [
           roles: ['user', 'admin']
         }
       },
-      
+
       // {
       //   path: '/*',
       //   name: 'NotFount',
@@ -140,7 +140,7 @@ export const permissionRouter = [
       icon: 'el-icon-info',
       roles: ['admin', 'user']
     },
-    children:[
+    children: [
       {
         path: 'page1',
         name: 'Page1',
@@ -189,7 +189,7 @@ export const permissionRouter = [
       icon: 'el-icon-info',
       roles: ['admin', 'user']
     },
-    children:[
+    children: [
       {
         path: 'newanderror',
         name: 'NewAndError',
@@ -201,15 +201,14 @@ export const permissionRouter = [
         }
       },
     ]
-  },    
+  },
 ]
 //NewAndError
-      // {
-      //   path: '/*',
-      //   name: 'NotFount',
-      //   component: NotFount
-      // }, 
+// {
+//   path: '/*',
+//   name: 'NotFount',
+//   component: NotFount
+// }, 
 export default new Router({
   routes: fixedRouter
 })
-  
