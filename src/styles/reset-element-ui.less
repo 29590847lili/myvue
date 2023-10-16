@@ -1,0 +1,63 @@
+// 左侧菜单 别动 别动 别动
+.global-menu{border-right:0 none;height:calc(100% - 65px);overflow-y:auto;
+    .el-menu{border-right:0 none;}
+    .el-menu-item,.el-submenu__title{height:40px;line-height:40px;padding-left:15px!important;
+        .iconfont{margin-right:20px;font-size:12px;}
+    }
+    .el-submenu__icon-arrow.el-icon-arrow-down{font-weight:bold;}
+
+    .one-link.el-submenu{margin:0 10px;}
+    .menu-one{
+        .el-submenu__title{padding-left:15px!important;
+            .iconfont{margin-right:20px;font-size:12px;}
+            &:hover{background: none!important;}
+        }
+        .el-menu-item{padding-left:50px!important;}
+    }
+    .menu-two{
+        .el-submenu__title{padding-left:47px!important;}
+    }
+    .menu-three{
+        &.is-opened.is-active{background:#fff!important;}
+        .el-submenu__title{padding-left:47px!important;background:#fff!important;
+            &:hover{background:#fff!important;}
+        }
+        .el-menu-item{padding-left:62px!important;
+        }
+    }
+}
+// 左侧菜单 结束
+
+// 表格
+.el-table{
+    .el-button--text{padding-top:0px;padding-bottom:0px;}
+}
+.el-pagination{text-align:right;padding:20px 0;}
+
+// 弹窗
+.el-dialog__title{font-size: 13px;}
+.el-dialog__header{border-radius: 6px 2px 2px 2px;font-weight: bold;font-size: 13px;margin-bottom: 30px;padding: 10px 20px 10px;}
+.el-dialog__body{padding:0 20px 10px 20px}
+.el-dialog__footer{border-top:1px solid #E4E4E4;padding:14px;}
+.el-form-item__label{font-size: 13px;font-weight: 500;text-align:right;
+    &::after{display:inline-block;content:'：'}
+}
+.el-dialog__headerbtn{top:10px;}
+
+// 单选框
+.el-radio__input{top:1px}
+.el-radio__label{font-size:13px;}
+.el-radio__input.is-checked .el-radio__inner{background:#fff;}
+.el-radio__inner::after{width:8px;height:8px}
+.el-radio{font-weight:normal;}
+
+// 提示框
+.el-message-box__header{height:42px;line-height:42px;background:#F1F4FA;font-size:13px!important;color:#3E3E3E;padding: 13px 15px 10px;
+    .el-message-box__title{font-size:13px;font-weight: bold;font-family: Source Han Sans CN;}
+}
+.el-message-box__message{text-align:center;padding:30px 0;font-size:13px;}
+.el-message-box__btns{height:70px;border-top:1px solid #DCDEE6;display:flex;align-items:center;justify-content:center;
+    .el-button{padding:10px 30px;}
+}
+.el-tooltip__popper.is-dark{background-color:rgba(000,0,0,0.5);filter:alpha(opacity=50);}
+.popper__arrow{opacity: 0.6;}
