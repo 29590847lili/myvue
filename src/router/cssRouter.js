@@ -13,6 +13,12 @@ const Route = [
         component: () => import('@/views/css/contenteditable'),
         meta: { parentTitle: 'CSS', title: 'contenteditable', path: '/css/contenteditable', visible: true, keepAlive: false }
       },
+      {
+        path: 'swiperList',
+        name: '滑动列表',
+        component: () => import('@/views/css/swiperList'),
+        meta: { parentTitle: 'CSS', title: '滑动列表', path: '/css/swiperList', visible: true, keepAlive: false }
+      },
       // demo
       {
         path: 'addEditUsers',

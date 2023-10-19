@@ -4,6 +4,7 @@
 
 <script>
 import * as echarts from 'echarts'
+import './china'
 // import 'echarts/map/js/china.js'
 export default {
   data () {

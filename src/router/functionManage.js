@@ -15,7 +15,7 @@ const Route = [
       },
       {
         path: 'rightButton',
-        name: '编辑器',
+        name: '右键',
         component: () => import('@/views/functionManage/rightButton'),
         meta: { parentTitle: '功能管理', title: '右键', path: '/functionManage/rightButton', visible: true, keepAlive: false }
       },

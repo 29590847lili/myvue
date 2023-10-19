@@ -18,7 +18,14 @@ export default new Vuex.Store({
     },
     pageSizes: [10, 20, 50, 100], // 翻页pageSizes
     pageSize: 10, // 当前页条数
-    layout: 'total, sizes, prev, pager, next, jumper' // 翻页组件
+    layout: 'total, sizes, prev, pager, next, jumper', // 翻页组件
+    // 拖拽（其他页面的不要放在这里面）
+    supervise: {
+      dragStatus: 0, // 0未开始、1拖拽中、2到达目标范围、3离开目标范围、5目标范围内释放
+      dragItem: null, // 拖拽中的题型、题库、status=（1拖拽中、2已完成）
+      formList: [], // 问卷列表
+      selectItem: null // 当前选中
+    }
   },
   mutations: {
   },

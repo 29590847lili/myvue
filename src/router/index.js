@@ -6,6 +6,7 @@ import SystemManage from './systemManage' // 系统管理
 import functionManage from './functionManage' // 功能管理
 import css from './cssRouter'
 import chart from './chart' // 图表管理
+import questionnaire from './questionnaire' // 问卷
 
 Vue.use(VueRouter)
 
@@ -14,7 +15,8 @@ const routes = [
   ...SystemManage,
   ...functionManage,
   ...chart,
-  ...css
+  ...css,
+  ...questionnaire
 ]
 
 const router = new VueRouter({

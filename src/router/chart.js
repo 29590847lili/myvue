@@ -11,14 +11,20 @@ const Route = [
         path: 'chinaMap',
         name: '中国地图',
         component: () => import('@/views/chart/chinaMap'),
-        meta: { parentTitle: '图表', title: '中国地图', path: '/chart/chinaMap', visible: true, keepAlive: false }
+        meta: { parentTitle: '图表', title: '中国地图chinaMap', path: '/chart/chinaMap', visible: true, keepAlive: false }
       },
-      // {
-      //   path: 'map',
-      //   name: '中国地图2',
-      //   component: () => import('@/views/chart/map'),
-      //   meta: { parentTitle: '图表', title: '中国地图2', path: '/chart/map', visible: true, keepAlive: false }
-      // },
+      {
+        path: 'map',
+        name: '中国地图',
+        component: () => import('@/views/chart/map'),
+        meta: { parentTitle: '图表', title: '中国地图map', path: '/chart/map', visible: true, keepAlive: false }
+      },
+      {
+        path: 'current',
+        name: '当前位置',
+        component: () => import('@/views/chart/current'),
+        meta: { parentTitle: '图表', title: '当前位置', path: '/chart/current', visible: true, keepAlive: false }
+      },
       // demo
       {
         path: 'addEditUsers',
